@@ -1,14 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SportsStore.Models;
-using System.Diagnostics;
-using SportsStore.Models;
 
 namespace SportsStore.Controllers
 {
-    public class HomeController : Controller
+    public class ProductController : Controller
     {
         private IProductRepository repository;
-        public HomeController(IProductRepository repo)
+        public ProductController(IProductRepository repo)
         {
             repository = repo;
         }
